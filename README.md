@@ -4,9 +4,6 @@
 
 This repository contains Final code for The Portfolio Website in ReactJS. <br />
 
-For the **Demo** and **Final Code** checkout this link👇: <br />
-<a href="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion#overview" target="_blank">Checkout this Responsive Portfolio in ReactJS</a> <br />
-
 
 
 
