@@ -1,7 +1,6 @@
 {
   "name": "react-portfolio",
-  "homepage": "https://Kritikaj2005.github.io/Kritika_portfolio",
-
+  
   "version": "2.0",
   "private": true,
   "dependencies": {
@@ -9,7 +8,6 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "framer-motion": "^7.6.19",
-    "gh-pages": "^6.3.0",
     "locomotive-scroll": "^4.1.4",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
@@ -27,8 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    
   },
   "eslintConfig": {
     "extends": [
