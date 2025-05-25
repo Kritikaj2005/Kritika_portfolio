@@ -28,20 +28,12 @@ export const Work = [
        
         github:"https://github.com/rohitkori/sso_backend"
     },
+
     {
         id:4,
-        name:"Sidebar Menu",
-        description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-        tags:["react","styledComponents","react-router"],
-        
-        demo:"https://react-sidebar.vercel.app/",
-        github:"https://github.com/codebucks27/react-sidebar"
-       
-    },{
-        id:5,
-        name:"Ride-Sharing Platform with dynamic pricing",
-        description:"Developed a dynamic ride pricing backend using real-time demand, traffic, and driver availability.Implemented complex business logic, routing algorithms, and API integrations as part of a DSA course project.",
-        tags:["react","python","typescript","flask","restAPI"],
+        name:"Speaker Recognition ",
+        description:"Developed a full-stack real-time speaker identification system using a CNN-based voice embedding model. Integrated WebSocket-enabled FastAPI backend with a responsive React frontend for live audio streaming and feedback. Deployed on Google Cloud using Docker and CI/CD via GitHub Actions.",
+        tags:["react.js","python","typescript","WebSockets","FastAPI","Docker"]
         
         github:"https://github.com/Kritikaj2005/prml_project_2025"
         
