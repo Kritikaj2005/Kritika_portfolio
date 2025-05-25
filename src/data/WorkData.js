@@ -33,7 +33,7 @@ export const Work = [
         id:4,
         name:"Speaker Recognition ",
         description:"Developed a full-stack real-time speaker identification system using a CNN-based voice embedding model. Integrated WebSocket-enabled FastAPI backend with a responsive React frontend for live audio streaming and feedback. Deployed on Google Cloud using Docker and CI/CD via GitHub Actions.",
-        tags:["react.js","python","typescript","WebSockets","FastAPI","Docker"]
+        tags:["react.js","python","typescript","WebSockets","FastAPI","Docker"],
         
         github:"https://github.com/Kritikaj2005/prml_project_2025"
         
