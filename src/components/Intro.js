@@ -79,9 +79,9 @@ const Intro = () => {
         >
             <SubBox>
                 <Text>
-                    <h1>Hi,</h1>
+                    <h1>Hey,</h1>
                     <h3>I'm Kritika,</h3>
-                    <h6>a full-stack developer passionate about turning ideas into bold, visually striking, and high-performing web experiences.</h6>
+                    <h4>a full-stack developer passionate about turning ideas into bold, visually striking, and high-performing web experiences.</h4>
                 </Text>
             </SubBox>
             <SubBox>

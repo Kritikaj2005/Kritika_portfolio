@@ -22,7 +22,7 @@ export const Work = [
     {
         id:3,
         name:" SSO IITJ: SDK and JWT Authentication",
-        description:"Built a centralized authentication system using OAuth2, OpenID Connect, and JWT for secure, scalable access across IITJ apps. Developed an SDK for server-to-server communication, enabling safe integration and role-based access control, under a senior",
+        description:"Built a centralized authentication system using OAuth2, OpenID Connect, and JWT tokens for secure and scalable access across IITJ apps. ",
         tags:["Python","FastAPI","OAuth2","JWT"],
         
        
@@ -32,7 +32,7 @@ export const Work = [
     {
         id:4,
         name:"Speaker Recognition ",
-        description:"Developed a full-stack real-time speaker identification system using a CNN-based voice embedding model. Integrated WebSocket-enabled FastAPI backend with a responsive React frontend for live audio streaming and feedback. Deployed on Google Cloud using Docker and CI/CD via GitHub Actions.",
+        description:"Developed a full-stack real-time speaker identification system using a CNN-based voice embedding model. Integrated WebSocket-enabled FastAPI backend with a responsive React frontend for live audio streaming and feedback.",
         tags:["react.js","python","typescript","WebSockets","FastAPI","Docker"],
         
         github:"https://github.com/Kritikaj2005/prml_project_2025"

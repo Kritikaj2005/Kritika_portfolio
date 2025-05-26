@@ -7,6 +7,7 @@ import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { YinYang } from './AllSvgs'
 import Intro from './Intro'
+import { useLocation } from 'react-router-dom';
 ;
 
 
@@ -23,6 +24,27 @@ h2,h3,h4,h5,h6{
   font-weight:500;
 }
 `
+const NavBox = styled.div`
+  background-color: ${(props) => props.theme.text};
+  color: ${(props) => props.theme.body};
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  h2 {
+    font-size: 1rem;
+    margin: 0;
+    color: inherit;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+
 
 const Container = styled.div`
 padding: 2rem;
@@ -129,6 +151,7 @@ transition: height 0.5s ease, width 1s ease 0.5s;
 const Main = () => {
 
     const [click, setClick] = useState(false);
+    const location = useLocation();
 
     const handleClick = () => setClick(!click);
 
@@ -136,7 +159,7 @@ const Main = () => {
         <MainContainer>
          <DarkDiv   click={click}/>
             <Container>
-            <PowerButton />
+             {location.pathname !== '/' && <PowerButton />}
             <LogoComponent theme={click ? 'dark' :'light'}/>
             <SocialIcons theme={click ? 'dark' :'light'} />
            
@@ -163,7 +186,9 @@ const Main = () => {
                 </motion.h2>
             </Contact>
             <BLOG to="/blog">
+            <NavBox>
                 <motion.h2
+
                 initial={{
                     y:-200,
                     transition: { type:'spring', duration: 1.5, delay:1}
@@ -177,8 +202,10 @@ const Main = () => {
                 >
                     Contact
                 </motion.h2>
+                </NavBox>
             </BLOG>
             <WORK to="/work" click={+click}>
+            <NavBox>
                 <motion.h2
                 initial={{
                     y:-200,
@@ -193,9 +220,11 @@ const Main = () => {
                 >
                     Work
                 </motion.h2>
+                </NavBox>
             </WORK>
             <BottomBar>
             <ABOUT to="/about" click={+click}>
+            <NavBox>
                 <motion.h2
                 initial={{
                     y:200,
@@ -208,10 +237,12 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    About.
+                    About
                 </motion.h2>
+                </NavBox>
             </ABOUT>
             <SKILLS to="/skills">
+            <NavBox>
                 <motion.h2
                 initial={{
                     y:200,
@@ -224,8 +255,9 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    My Skills.
+                    My Skills
                 </motion.h2>
+                </NavBox>
             </SKILLS>
 
             </BottomBar>
